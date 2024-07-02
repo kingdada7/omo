@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>2 Year Plan</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('gradient-roadmap-infographic-template-removebg-preview.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .GOALS {
+            font-size: 5.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:black;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-family:  sans-serif;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: auto;
+            height: auto;
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .links a {
+            display: block;
+            margin: 10px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            margin: 15px 0;
+        }
+
+        .expert {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .expert:hover {
+            transform: translateY(-10px);
+        }
+
+        .skills-choke {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dropbtn:hover {
+            background-color: #0056b3;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content .info,
+        .dropdown-content .links a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content .links a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .icon-container i {
+            font-size: 30px;
+        }
+
+        /* Media queries for tablet and mobile screens */
+        @media only screen and (max-width: 768px) {
+            .GOALS {
+                font-size: 4rem;
+            }
+
+            .expert {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .skills-choke {
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="GOALS">MY 2 YEAR GOALS</h1>
+    <div class="container">
+        <h1>Profile Information</h1>
+        <div class="profile-picture">
+            <img src="pro.png" alt="Profile Picture" data-testid="profilePicture">
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Your Profile <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <div class="info" data-testid="displayName">Mofetoluwa Dada</div>
+                <div class="info" data-testid="email"><a href="mailto:toluwadada7@gmail.com">toluwadada7@gmail.com</a></div>
+                <div class="info" data-testid="currentTimeUTC"></div>
+                <div class="info" data-testid="currentDay"></div>
+                <div class="links">
+                    <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+                    <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+                    <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-choke">
+        <div class="expert" style="border-bottom: 5px solid red;">
+            <div class="icon-container"><i class="fa-solid fa-1" style="color: red;"></i></div>
+            <h3 style="color: red;">SKILL DEVELOPMENT</h3>
+            <p>Practicing coding for 2 hours daily, Participate in coding challenges and hackathons.</p>
+        </div>
+
+        <div class="expert" style="border-bottom: 5px solid orange;">
+            <div class="icon-container"><i class="fa-solid fa-2" style="color: orange;"></i></div>
+            <h3 style="color: orange;">GET A JOB</h3>
+            <p>Using skills gathered, Write a well-structured CV, Apply to jobs in related fields, and Prepare for interviews.</p>
+        </div>
+
+        <div class="expert" style="border-bottom: 5px solid lightgreen;">
+            <div class="icon-container"><i class="fa-solid fa-3" style="color: lightgreen;"></i></div>
+            <h3 style="color: lightgreen;">PHYSICAL FITNESS</h3>
+            <p>Exercise for at least 30 minutes on all or most days of the week, Cut back on junk food.</p>
+        </div>
+
+        <div class="expert" style="border-bottom: 5px solid lightskyblue;">
+            <div class="icon-container"><i class="fa-solid fa-4" style="color: lightskyblue;"></i></div>
+            <h3 style="color: lightskyblue;">GET CLOSER WITH GOD</h3>
+            <p>Study the Bible, Spend time in prayer, Build a community of Christian friends.</p>
+        </div>
+
+        <div class="expert" style="border-bottom: 5px solid blueviolet;">
+            <div class="icon-container"><i class="fa-solid fa-5" style="color: blueviolet;"></i></div>
+            <h3 style="color: blueviolet;">START A BUSINESS</h3>
+            <p>Develop a business plan, Research the market, Launch and promote your business.</p>
+        </div>
+    </div>
+
+    <script>
+        function updateTimeAndDay() {
+            const currentTimeUTCElement = document.querySelector('[data-testid="currentTimeUTC"]');
+            const currentDayElement = document.querySelector('[data-testid="currentDay"]');
+
+            const now = new Date();
+            const utcTime = now.toUTCString().split(' ')[4]; // Get time part only
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const currentDay = daysOfWeek[now.getUTCDay()];
+
+            currentTimeUTCElement.textContent = `Current Time in UTC: ${utcTime}`;
+            currentDayElement.textContent = `Current Day of the week: ${currentDay}`;
+        }
+
+        // Update immediately and then every minute
+        updateTimeAndDay();
+        setInterval(updateTimeAndDay, 60000);
+    </script>
+</body>
+</html>
